@@ -29,6 +29,7 @@ public class HttpClientTest {
                 "  \"id\": \"124\"\n" +
                 "}\n";
 
+        
         Gson gson = new Gson();
         RootItem[] usersGoodResponse =  gson.fromJson(response.body(), RootItem[].class);
 //        Employee usersGoodResponse =  gson.fromJson(jsonString, Employee.class);
