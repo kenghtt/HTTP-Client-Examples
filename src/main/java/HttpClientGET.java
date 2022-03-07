@@ -8,7 +8,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class HttpClientTest {
+public class HttpClientGET {
 
 
     private static final String GET_API_URL = "https://jsonplaceholder.typicode.com/users";
@@ -29,7 +29,7 @@ public class HttpClientTest {
                 "  \"id\": \"124\"\n" +
                 "}\n";
 
-        
+
         Gson gson = new Gson();
         RootItem[] usersGoodResponse =  gson.fromJson(response.body(), RootItem[].class);
 //        Employee usersGoodResponse =  gson.fromJson(jsonString, Employee.class);
